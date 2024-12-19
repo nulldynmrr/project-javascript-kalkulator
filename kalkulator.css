@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+.inria-serif-regular {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-serif-bold {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.background {
+  background-color: #0f0f0f;
+  background-image: url("img/backgroundKalkulator.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-display {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 15, 15, 0) 2.08%,
+    rgba(15, 15, 15, 0.8) 14.18%,
+    #0f0f0f 52.17%,
+    rgba(15, 15, 15, 0.8) 83.12%,
+    rgba(15, 15, 15, 0) 95.88%
+  );
+}
+
+.container-angka {
+  background-color: #cdcdcd;
+  width: 100%;
+  max-width: 224px;
+  min-height: 100px;
+  font-size: 42px;
+  font-weight: medium-bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container-angka:active {
+  background-color: #bababa;
+}
+
+.container-operator {
+  background-color: #4b5efc;
+  width: 224px;
+  height: 100px;
+  font-size: 42px;
+  font-weight: medium-bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container-operator:active {
+  background-color: #1f32d4;
+}
+
+.container-result {
+  background-color: #fcb84b;
+  width: 224px;
+  height: 100px;
+  font-size: 42px;
+  font-weight: medium-bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container-result:active {
+  background-color: #f8b016;
+}

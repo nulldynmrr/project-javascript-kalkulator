@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uni.Math | Kalkulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="kalkulator.css" />
+  </head>
+  <body class="background">
+    <nav
+      class="flex justify-between items-center max-w-[100%] h-[60px] px-[30px] md:px-[200px]"
+    >
+      <a href=""
+        ><h1 class="inria-serif-regular text-white text-xl">uni.Math</h1></a
+      >
+      <ul class="flex">
+        <li><a href="biner.html" class="text-white ml-8">Convert Biner</a></li>
+      </ul>
+    </nav>
+    <section class="flex flex-wrap justify-center mx-[30px] md:mx-[200px]">
+      <div class="container-display min-h-[220px] w-full py-[60px] text-right">
+        <p id="memory" class="text-xl text-[#B7B7B7] h-8"></p>
+        <p id="display" class="text-7xl text-right text-white"></p>
+      </div>
+      <div class="grid grid-cols-5 gap-[10px]">
+        <button class="container-angka" onclick="tambahNilai('7')">7</button>
+        <button class="container-angka" onclick="tambahNilai('8')">8</button>
+        <button class="container-angka" onclick="tambahNilai('9')">9</button>
+        <button class="container-operator" onclick="tambahNilai('/')">/</button>
+        <button class="container-operator" onclick="hapusTampilan()">AC</button>
+        <button class="container-angka" onclick="tambahNilai('4')">4</button>
+        <button class="container-angka" onclick="tambahNilai('5')">5</button>
+        <button class="container-angka" onclick="tambahNilai('6')">6</button>
+        <button class="container-operator" onclick="tambahNilai('*')">x</button>
+        <button class="container-operator" onclick="hapus()">DEL</button>
+        <button class="container-angka" onclick="tambahNilai('1')">1</button>
+        <button class="container-angka" onclick="tambahNilai('2')">2</button>
+        <button class="container-angka" onclick="tambahNilai('3')">3</button>
+        <button class="container-operator" onclick="tambahNilai('-')">-</button>
+        <div
+          class="container-result text-center btn-equal col-span-1 row-span-2"
+          onclick="hitungHasil()"
+        >
+          =
+        </div>
+        <button class="container-angka" onclick="tambahNilai('00')">00</button>
+        <button class="container-angka" onclick="tambahNilai('0')">0</button>
+        <button class="container-angka" onclick="tambahNilai('.')">.</button>
+        <button class="container-operator" onclick="tambahNilai('+')">+</button>
+      </div>
+    </section>
+    <script src="kalkulator.js"></script>
+  </body>
+</html>
